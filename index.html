@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather API ⛅</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://use.typekit.net/vfn1flx.css">
+    </head>
+
+    <body>
+        <main>
+            <div class="container">
+                <div class="left__side">
+                    <div class="left__side__header">
+                        <div id="weather-state"></div>
+                        <h1 id="dayweek"></h1>
+                        <p id="date"></p>
+                        <p id="location"></p>
+                    </div>
+                    <div class="left__side__footer">
+                        <i id="weather__icon"></i>
+                        <div>
+                            <h1 id="temp"></h1><span id="thermometer"></span>
+                        </div>
+                        <p id="description" class="bold"></p>
+                        <span class="start__search">Type a city &rarr;</span>
+                    </div>
+                </div>
+                <div class="right__side">
+                    <div class="info">
+                        <p id="wind">Wind: </p><span></span><div id="wind__direction"></div>
+                        <p id="feelslike">Feels like: </p><span></span>
+                        <p id="tempmin">Min temperature: </p><span></span>
+                        <p id="tempmax">Max temperature: </p><span></span>
+                        <p id="sunrise">Sunrise: </p><span></span>
+                        <p id="sunset">Sunset: </p><span></span>
+                        <p id="pressure">Pressure: </p><span></span>
+                        <p id="humidity">Humidity: </p><span></span>
+                    </div>
+                    <div class="search">
+                        <span id="error"></span>
+                        <input type="text" id="search" placeholder="Search..."">
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+    <script src=" script.js"></script>
+</html>
