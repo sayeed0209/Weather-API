@@ -16,7 +16,7 @@ $("#search").keydown(function() {
         $.ajax({
             method: "GET",
             // '&units=metric to convert kelvin to celcius
-            url: "http://api.openweathermap.org/data/2.5/weather?q="+city+"&units=metric&appid=b5f3c03e8773172f10e21c2f6673bc5c",
+            url: "https://api.openweathermap.org/data/2.5/weather?q="+city+"&units=metric&appid=b5f3c03e8773172f10e21c2f6673bc5c",
             success: function(response) {
                 // Saving sunrise and sunset hours in hours format, example: 06:09
                 let sunrise = ("0"+(new Date((response.sys.sunrise+response.timezone) * 1000)).getUTCHours()).slice(-2)+":"+("0"+(new Date((response.sys.sunrise+response.timezone) * 1000)).getUTCMinutes()).slice(-2);
